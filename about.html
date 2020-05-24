@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>VHS INFOTECH PVT LTD</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script async defer 
+    src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyB2bXKNDezDf6YNVc-SauobynNHPo4RJb8&callback=initMap"> 
+    </script> 
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -14,7 +17,10 @@ body, html {
   height: 100%;
   line-height: 1.8;
 }
-
+#map { 
+        height: 400px; 
+        width: 100%; 
+       }
 /* Full height image header */
 .bgimg-1 {
   background-position: center;
@@ -70,7 +76,7 @@ body, html {
     <div class="w3-quarter">
       <i class="fa fa-mobile-phone w3-margin-bottom w3-jumbo"></i>
       <p class="w3-large">Mobility</p>
-      <p>We are authorised dealers of Samsung mobility, providing best and pocket friendly devices</p>
+      <p>We are authorised partners of Samsung mobility, providing best and pocket friendly devices</p>
     </div>
     <div class="w3-quarter">
       <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
@@ -94,11 +100,12 @@ body, html {
  <i class="fas fa-box-open w3-margin-bottom w3-jumbo"></i>
  <h3 class="w3-center">Everything We do</h3> 
 <p>Along with IT and Mobility, we serve in lifestyles and many more things.<br>
-<a href="C:\Users\Vineeta\Desktop\vhs\contact.html" title="VHS INFOTECH PVT LTD" target="_blank" class="w3-hover-text-green">
+<a href="C:\Users\Vineeta\Desktop\vhs\product.html" title="VHS INFOTECH PVT LTD" target="_blank" class="w3-hover-text-green">
 	  <b>Take a look at what we do!</b></a></p>
   </div>
   </div>
-
+<br>
+<br>
 <div class="w3-container" style="padding:8px 16px" id="about">
  <h3 class="w3-center">VISION AND MISSION</h3> 
  <div class="w3-center">
@@ -108,7 +115,10 @@ Our mission looks forward to our development along with our customer's growth.
 We are proven to be a social asset for the respective community and environment.</p>
   </div>
   </div>
-<!--Footer-->
+
+  <!--MAP-->
+  <div id="map"></div> 
+  <!--Footer-->
 <footer class="w3-center w3-black w3-padding-64">
   <a href="C:\Users\Vineeta\Desktop\vhs\index.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
@@ -137,6 +147,16 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
+ 
+       function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 28.60541, lng: 77.10321};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+      } 
 </script>
 </body>
 </html>
