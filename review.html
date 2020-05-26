@@ -3,24 +3,81 @@
 <title>VHS INFOTECH PVT LTD</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-<script async defer 
-    src= "https://maps.googleapis.com/maps/api/js?key=AIzaSyB2bXKNDezDf6YNVc-SauobynNHPo4RJb8&callback=initMap"> 
-    </script> 
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+@media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+heading {
+  font-size: 45px;
+  margin-right: 25px;
+  }
+
+.fa {
+  font-size: 25px;
+}
+
+.checked {
+  color: orange;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #f1f1f1;
+  text-align: center;
+  color: white;
+}
+
 
 body, html {
   height: 100%;
   line-height: 1.8;
 }
-#map { 
-        height: 400px; 
-        width: 100%; 
-       }
+
 /* Full height image header */
 .bgimg-1 {
   background-position: center;
@@ -62,65 +119,20 @@ body, html {
   <a href="offer.html" onclick="w3_close()" class="w3-bar-item w3-button">OFFERS</a>
   <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
-<!--About section-->
-<div class="w3-container" style="padding:128px 16px" id="about">
-  <h3 class="w3-center">ABOUT THE COMPANY</h3>
-  <p class="w3-center w3-large">Key features of our company</p>
-  <div class="w3-row-padding w3-center" style="margin-top:64px">
-    <div class="w3-quarter">
-      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
-      <p class="w3-large">IT Products</p>
-      <p>We provide end-to-end IT solutions with the latest range of technology and devices for 
-	  computer desktops, Laptops, tablets, Printers, Logistics etc.</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-mobile-phone w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Mobility</p>
-      <p>We are authorised partners of Samsung mobility, providing best and pocket friendly devices</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Passion</p>
-      <p>We have enormous experience that is reflected in every way we serve the other organizations. 
-	  Our technical expertise, and highly skilled manpower masters in satisfying our customers</p>
-    </div>
-    <div class="w3-quarter">
-      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-      <p class="w3-large">Support</p>
-      <p>We provide effective support services to our customers. You can 
-	  <a href="C:\Users\Vineeta\Desktop\vhs\contact.html" title="VHS INFOTECH PVT LTD" target="_blank" class="w3-hover-text-green">
-	  <b>contact us</b></a>
-	   for furthur support queries</p>
-    </div>
-	</div>
-</div>
 
-<div class="w3-container" style="padding:8px 16px" id="about">
- <div class="w3-center">
- <i class="fas fa-box-open w3-margin-bottom w3-jumbo"></i>
- <h3 class="w3-center">Everything We do</h3> 
-<p>Along with IT and Mobility, we serve in lifestyles and many more things.<br>
-<a href="C:\Users\Vineeta\Desktop\vhs\product.html" title="VHS INFOTECH PVT LTD" target="_blank" class="w3-hover-text-green">
-	  <b>Take a look at what we do!</b></a></p>
-  </div>
-  </div>
-<br>
-<br>
-<div class="w3-container" style="padding:8px 16px" id="about">
- <h3 class="w3-center">VISION AND MISSION</h3> 
- <div class="w3-center">
- <i class="far fa-building w3-margin-bottom w3-jumbo"></i>
-<p>We aim to be the leader in providing fast response, informed expertise and building sustainable relationships with our customers for future growth.
-Our mission looks forward to our development along with our customer's growth.
-We are proven to be a social asset for the respective community and environment.</p>
-  </div>
-  </div>
-
-  <!--MAP-->
-  <div id="map"></div> 
+<!--Review Section-->
+<div class="w3-container" style="padding:128px 16px">
+<h1 class="heading"><i class="fa fa-user"></i> Customer Rating</h1>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<p>5 starred based on 54 reviews.</p>
+<hr style="border:3px solid #f1f1f1"></div>
   <!--Footer-->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="C:\Users\Vineeta\Desktop\vhs\about.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="C:\Users\Vineeta\Desktop\vhs\review.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <i class="fab fa-facebook w3-hover-opacity"></i>
     <a href="https://www.linkedin.com/in/vhs-infotech-9aa99a1aa/"><i class="fab fa-linkedin w3-hover-opacity">
@@ -130,7 +142,6 @@ We are proven to be a social asset for the respective community and environment.
   We respect their trademarks, patents, web contents, etc.<br> 
   <a href="C:\Users\Vineeta\Desktop\vhs\index.html" title="VHS INFOTECH PVT LTD" target="_blank" class="w3-hover-text-green">Contact us </a>for more details</p>
 </footer>
- 
 <script>
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
@@ -147,17 +158,6 @@ function w3_open() {
 function w3_close() {
     mySidebar.style.display = "none";
 }
- 
-       function initMap() {
-  // The location of Uluru
-  var uluru = {lat: 28.60541, lng: 77.10321};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-      } 
 </script>
 </body>
 </html>
-
