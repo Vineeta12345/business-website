@@ -27,6 +27,45 @@ body, html {
 .w3-bar .w3-button {
   padding: 16px;
 }
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.text {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
 </style>
 <body>
 <div class="w3-top">
@@ -57,73 +96,39 @@ body, html {
   <a href="\vhsinfotech\offer.html" onclick="w3_close()" class="w3-bar-item w3-button">OFFERS</a>
   <a href="\vhsinfotech\contact.html" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
- 
- <!-- Product Section -->
-<div class="w3-container" style="padding:128px 16px" id="team">
-  <h3 class="w3-center">PRODUCTS</h3>
-  <p class="w3-center w3-large">We starve to serve!</p>
+
+<!--Products and series-->
+  <div class="w3-container" style="padding:100px 16px" id="team">
+  <h3 class="w3-center">SONY</h3>
   <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <a href="\vhsinfotech\samsung.html" title="VHS INFOTECH PVT LTD" target="_blank" class="w3-hover-text-green">
-		<img src="\vhsinfotech\img\products20.webp" alt="John" style="width:100%">
-        </a>
+	  <div class="container">
+        <img src="\vhsinfotech\img\pspro.jpg" alt="John" style="width:100%">
 		<div class="w3-container">
-         <a href="\vhsinfotech\samsung.html" title="VHS INFOTECH PVT LTD" target="_blank" class="w3-hover-text-green">
-		 <h3>SAMSUNG</h3></a>
-          <p class="w3-opacity">Authorised distributors and EPP member</p>
-          <p>We provide you everything in samsung mobility. Be it mobiles, accessories, feature phones etc.</p>
-          <p><a href="\vhsinfotech\contact.html" title="VHS INFOTECH PVT LTD" target="_self" class="w3-hover-text-green">
-		  <button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </a></div>
+         <h3>Play Station</h3>
+		  <div class="overlay">
+		  <div class="text">
+		  Experience breath taking environment <br>HD Reality <br>
+		  Stunning graphics,<br> next level experience,<br> unbreakable immersion<br>
+		  Feel the power of gaming! <br>Contact us for more details and orders!</div>
       </div>
+	  </div>
+	  </div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-       <a href="\vhsinfotech\nokia.html" title="VHS INFOTECH PVT LTD" target="_blank" class="w3-hover-text-green">
-	  <img src="\vhsinfotech\img\nokia.png" alt="Jane" style="width:100%"></a>
-        <div class="w3-container">
-		<a href="\vhsinfotech\nokia.html" title="VHS INFOTECH PVT LTD" target="_blank" class="w3-hover-text-green">
-          <h2>Nokia</h2></a>
-          <p>Providing smart phones and feature phones</p>
-          <a href="\vhsinfotech\contact.html" title="VHS INFOTECH PVT LTD" target="_blank" class="w3-hover-text-green">
-		  <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </a></div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-	  <a href="\vhsinfotech\sony.html" title="VHS INFOTECH PVT LTD" target="_blank" class="w3-hover-text-green">
-        <img src="\vhsinfotech\img\ps.jpg" alt="Mike" style="width:100%">
+	</div>
+	</div>
+	</div>
+	<p><a href="\vhsinfotech\contact.html" title="VHS INFOTECH PVT LTD" target="_self" class="w3-hover-text-green">
+		  <button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button>
         </a>
-		<div class="w3-container">
-<a href="\vhsinfotech\sony.html" title="VHS INFOTECH PVT LTD" target="_blank" class="w3-hover-text-green">
-		<h2>Sony</h2></a>
-          <p>Providing you a overwhelming gaming experience<br>We serve gaming consoles from sony.</p><br>
-          <a href="\vhsinfotech\contact.html" title="VHS INFOTECH PVT LTD" target="_blank" class="w3-hover-text-green">
-		  <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </a></div>
-      </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <a href="\vhsinfotech\apple.html" title="VHS INFOTECH PVT LTD" target="_blank" class="w3-hover-text-green">
-		<img src="\vhsinfotech\img\apple.jpg" alt="Dan" style="width:100%">
-</a>        <div class="w3-container">
-<a href="\vhsinfotech\apple.html" title="VHS INFOTECH PVT LTD" target="_blank" class="w3-hover-text-green">
-		<h2>Apple</h2>
-</a>          <p>We provide a wide range of apple products; iphones, ipads, macbooks, accessories, etc. 
-              </p>
-          <p><br><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
- 
+	Images are for representation purpose only actual product may differ!
+	</p>
+	</div>
+
  <!--Footer-->
 <footer class="w3-center w3-black w3-padding-64">
-  <a href="\vhsinfotech\product.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <a href="\vhsinfotech\sony.html" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
     <i class="fab fa-facebook w3-hover-opacity"></i>
 	    <i class="fab fa-whatsapp w3-hover-opacity"></i>
